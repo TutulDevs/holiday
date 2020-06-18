@@ -1,0 +1,60 @@
+
+
+@media screen and (max-width: 800px ) {
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        height: 60px;
+    }
+    #menu {
+        background: var(--black);
+        position: absolute;
+        left: 999px;
+        top: 60px;
+        width: 150px;
+        height: auto;
+        flex-direction: column;
+        transition: var(--speed);
+    }
+    #menu a {
+        text-align: center;
+        padding: 1rem;
+        display: block;
+    }
+    
+    .label {
+        display: block;
+        transition: var(--speed);
+    }
+
+    #toggler:checked ~ #menu {
+        left: 72%;
+    }
+
+    .work {
+        grid-template-columns: 1fr;
+    }
+    .testimonial {
+        order: 1;
+        width: 80%;
+        margin: auto;
+    }
+
+    .section-header {
+        font-size: 1.5rem;
+    }
+    .top-box {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+    .work-box-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .dg2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
