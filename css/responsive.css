@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 800px ) {
     body {
+        width: 100vw;
         overflow-x: hidden;
     }
     header {
@@ -10,13 +11,14 @@
     #menu {
         background: var(--black);
         position: absolute;
-        left: 999px;
         top: 60px;
-        width: 150px;
+        left: -100%;
+        width: 100%;
         height: auto;
         flex-direction: column;
         transition: var(--speed);
     }
+    
     #menu a {
         text-align: center;
         padding: 1rem;
@@ -29,7 +31,10 @@
     }
 
     #toggler:checked ~ #menu {
-        left: 72%;
+        left: 0;
+    }
+    #toggler:checked ~ .label {
+        transform: rotate(90deg);
     }
 
     .work {
