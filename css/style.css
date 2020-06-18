@@ -708,6 +708,9 @@ form.hotel {
     gap: 0;
     grid-template-columns: 2fr 3fr;
 }
+.popular-box img {
+    height: 100%;
+}
 
 .popular-content {
     border: 1px solid #eee;
@@ -716,6 +719,6 @@ form.hotel {
     grid-template-rows: auto 50px;
 }
 .popular-content > p {
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
     align-self: center;
 }
